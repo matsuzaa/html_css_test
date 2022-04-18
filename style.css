@@ -55,7 +55,7 @@ img{
     /* 上部左 */
 .logo{
     float:left;
-    padding:15px 30px    
+    padding:10px 30px    
 }
 
 .logo_img{
@@ -86,16 +86,17 @@ img{
     font: weight 500;
 }
 
-.counseling{
-    background-color:orange;
-    padding:20px 20px;
-    margin:10px;
-    border-radius:100vh;
+.counseling_font{
+    margin-top:25px;
 }
 
-.counseling_font{
+.counseling{
     font-size:12px;
     color:white;
+    background-color:orange;
+    padding:15px 20px;
+    margin:10px;
+    border-radius:100vh;
 }
 
 /* 折りたたみ用処理 */
@@ -146,7 +147,7 @@ img{
             position:fixed;
             right:-120%;
             transition:all 1s;
-            background-color:rgba(0, 0, 0,0.8);
+            background-color:rgba(0, 0, 0,0.9);
             margin-top:50px;
         }
 
@@ -177,18 +178,23 @@ img{
             letter-spacing:2px;
         }
 
+
+        .counseling_font{
+            margin-top:50px;
+        }
+
         .counseling{
+            font-size:16px;
+            font-weight:600;
             background-color:orange;
             width:180px;
-            padding:30px;
+            padding:22px 50px;
             margin:auto;
             border-radius:100vh;
             align-items:center;
         }
 
-        .counseling_font{
-            font-size:16px;
-        }
+
 
         /* クリックされた時の処理 */
         #click_check:checked ~ .header_label{
@@ -275,8 +281,9 @@ img{
 }
 
 .counseling2{
+    font-size:14px;
     color:white;
-    font-weight:600;
+    font-weight:400;
     background-color:orange;
     padding:20px 40px;
     margin:10px;
@@ -306,6 +313,21 @@ img{
 
 
     /* 画面幅が小さい時に実行 */
+    @media screen and (max-width:1080px){
+        .main_app{
+            position:static;
+            margin-top:55px;
+        }
+
+        .main_mvtop{
+            padding-top:50px;
+        }
+
+
+
+    }
+
+
     @media screen and (max-width:766px){
 
 
@@ -343,6 +365,7 @@ img{
             width:100%;
             position:absolute;
             top:55%;
+            padding:0;
         }
 
         #main_head{
@@ -365,14 +388,8 @@ img{
         }
 
         .button1{
-            display:block;
-            width:95%;
-            background-color:orange;
-            margin-left:12px;
-            margin-right:10px;
-            padding-top:20px;
-            padding-bottom:20px;
-            border-radius:100vh;
+            display:flex;
+            width:90vw;
         }
 
         .document{
@@ -380,13 +397,18 @@ img{
         }
 
         .counseling2{
-            background-color:transparent; /* 背景色指定を無効化 */
+            width:100vw;
+            background-color:orange;
+            margin:auto;
+            padding:20px 0;
+            border-radius:100vh;
+            text-align:center;
         }
 
         .caution{
             position:static;
             width:90%;
-            margin-top:75px;
+            margin-top:80px;
             margin-bottom:25px;
             margin-left:20px;
         }
@@ -409,6 +431,7 @@ img{
     height:auto;
     padding:20px 10px;
     text-align:left;
+    margin-left:40px;
 }
 
 #overview_text1{
@@ -421,18 +444,24 @@ img{
     font-weight:700;
 }
 
+
+
+.overview_button_a{
+    margin:auto;
+}
+
 .overview_button{
     background-color:white;
-    padding:5px 70px;
-    margin:auto;
-    border-radius:100vh;
+    padding:10px 70px;
+    border-radius:100vw;
 }
 
 .overview_text_top{
     font-size:22px;
     color:orange;
     font-weight:700;
-    line-height:0;
+    line-height:1;
+    margin:5px 0;
 }
 
 .overview_text_bottom{
@@ -440,6 +469,7 @@ img{
     color:orange;
     font-weight: 500;
     line-height:0.8;
+    margin:5px 0;
 }
 
     /* 画面幅が小さい時に実行 */
@@ -456,22 +486,18 @@ img{
             display:block;
             max-width:1080px;
             width:90%;
-            margin:0 10px;
+            margin:0 50px 0 20px;
+        }
+
+        .overview_button_a{
+            height:auto;
         }
 
         .overview_button{
-            display:block;
-            width:100px;
-            font-size:0;
+            margin:auto;
+            width:120px;
         }
 
-        .overview_text_top{
-            margin-left:0;
-        }
-
-        .overview_text_bottom{
-            margin-left:0;
-        }
 
     }
 
