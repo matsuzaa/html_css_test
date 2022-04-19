@@ -83,7 +83,7 @@ img{
 .text_bottom{
     font-size:10px;
     color:black;
-    font: weight 500;
+    font-weight: 500;
 }
 
 .counseling_font{
@@ -328,7 +328,7 @@ img{
     }
 
 
-    @media screen and (max-width:766px){
+    @media screen and (max-width:767px){
 
 
         .main_backimg{
